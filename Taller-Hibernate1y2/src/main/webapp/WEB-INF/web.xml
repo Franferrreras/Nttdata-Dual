@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee ; http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Taller-Hibernate</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>Main</servlet-name>
+  	<servlet-class>com.nttdata.sevilla.controller.MainServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Contract</servlet-name>
+  	<servlet-class>com.nttdata.sevilla.controller.ContractServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>AddCustomer</servlet-name>
+  	<servlet-class>com.nttdata.sevilla.controller.AddCustomerServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>DeleteCustomer</servlet-name>
+  	<servlet-class>com.nttdata.sevilla.controller.DeleteCustomerServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>UpdateCustomer</servlet-name>
+  	<servlet-class>com.nttdata.sevilla.controller.UpdateCustomerServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>UpdateContract</servlet-name>
+  	<servlet-class>com.nttdata.sevilla.controller.UpdateContractServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>DeleteContract</servlet-name>
+  	<servlet-class>com.nttdata.sevilla.controller.DeleteContractServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>AddContract</servlet-name>
+  	<servlet-class>com.nttdata.sevilla.controller.AddContractServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Main</servlet-name>
+  	<url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>Contract</servlet-name>
+  	<url-pattern>/Contract</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AddCustomer</servlet-name>
+  	<url-pattern>/AddCustomer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>DeleteCustomer</servlet-name>
+  	<url-pattern>/DeleteCustomer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>UpdateCustomer</servlet-name>
+  	<url-pattern>/UpdateCustomer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>UpdateContract</servlet-name>
+  	<url-pattern>/UpdateContract</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>DeleteContract</servlet-name>
+  	<url-pattern>/DeleteContract</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AddContract</servlet-name>
+  	<url-pattern>/AddContract</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+       <servlet-name>default</servlet-name>
+       <url-pattern>/img/*</url-pattern>
+       <url-pattern>/css/*</url-pattern>
+	</servlet-mapping>
+</web-app>
